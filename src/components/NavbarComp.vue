@@ -9,7 +9,7 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav ms-auto px-3">
-        <a class="nav-link mx-3" aria-current="page" href="/">Home</a>
+        <a class="nav-link mx-3" aria-current="page" href="#">Home</a>
         <a class="nav-link mx-3" href="#about">About</a>
         <a class="nav-link mx-3" href="#resume">Resume</a>
         <a class="nav-link mx-3" href="#projects">Projects</a>

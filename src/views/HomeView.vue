@@ -10,7 +10,7 @@
 
     </section>
     <section class="row" id="projects">
-
+      <Projects/>
     </section>
     <section class="row" id="testimonials">
       <Testimonials/>
@@ -25,11 +25,12 @@
 import Landing from '@/components/LandingSection.vue'
 import About from '@/components/AboutSection.vue'
 import Testimonials from '@/components/TestimonialsSection.vue'
+import Projects from '@/components/ProjectSection.vue'
 
 export default {
   name: 'HomeView',
   components: {
-    Landing, About, Testimonials
+    Landing, About, Testimonials, Projects
   }
 }
 </script>
