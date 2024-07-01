@@ -1,8 +1,9 @@
 <template >
     <footer class="container-fluid">
         <div class="row">
-            <p class="lead">Abdurahmaan's Portfolio</p>
-            <span>&copy; {{currentYear}}</span>
+            <p class="lead">Abdurahmaan's Portfolio 
+                <span>&copy; {{currentYear}}</span>
+            </p>
         </div>
     </footer>
 </template>
