@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div class="row min-vh-100   align-items-center">
+    <div class="row min-vh-100 align-items-center">
       <div class="col">
         <img
           src="https://achar1f.github.io/projectimages/images/me.png"
@@ -13,7 +13,7 @@
         <h2 class="display-2">Abdurahmaan Charif</h2>
       </div>
     </div>
-  </div>
+</div>
 </template>
 
 <script setup>
