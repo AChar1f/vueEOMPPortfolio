@@ -1,11 +1,21 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <div class="wrapper">
+    <Navbar/>
+    <main class="container-fluid">
+      <router-view />
+    </main>
+  </div>
 </template>
 
-<style src="./assets/css/style.css">
+<script>
+  import Navbar from '@/components/NavbarComp.vue'
 
+  export default {
+    components: {
+      Navbar
+    }
+  }
+</script>
+
+<style src="@/assets/css/style.css">
 </style>
