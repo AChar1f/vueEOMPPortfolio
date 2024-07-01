@@ -30,6 +30,14 @@
 section{
     scroll-margin-block: 7rem;
   }
+/* responsiveness width */
+  :is(main.container-fluid) {
+    width: 100dvw;
+  }
+
+.landing {
+    min-height: 85.5vh;
+}
 
 /* Select all images */
 img {
