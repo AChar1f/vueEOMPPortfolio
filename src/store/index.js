@@ -2,7 +2,7 @@ import { createStore } from 'vuex'
 import axios from 'axios'
 import Swal from 'sweetalert2/dist/sweetalert2'
 
-const portfolioDataURL = "https://achar1f.github.io/vueEOMPData/data/"
+const dataLink = 'https://achar1f.github.io/vueEOMPData/data/'
 
 export default createStore({
   state: {
@@ -12,7 +12,7 @@ export default createStore({
     education: null,
     skills: null,
     projects: null,
-    testimonials: null
+    testimonials: null,
   },
   getters: {
   },
@@ -40,11 +40,9 @@ export default createStore({
     }
   },
   actions: {
-  },
-  modules: {
     async fetchJobTitle(context){
       try {
-        let {jobTitle} =  await (await axios.get(portfolioDataURL)).data
+        let {jobTitle} =  await (await axios.get(dataLink)).data
         context.commit('setJobTitle', jobTitle)
       } 
       catch (e) {
@@ -58,7 +56,7 @@ export default createStore({
     },
     async fetchAbout(context){
       try {
-        let {About} =  await (await axios.get(portfolioDataURL)).data
+        let {About} =  await (await axios.get(dataLink)).data
         context.commit('setAbout', About)
       } 
       catch (e) {
@@ -72,7 +70,7 @@ export default createStore({
     },
     async fetchExperience(context){
       try {
-        let {Experience} =  await (await axios.get(portfolioDataURL)).data
+        let {Experience} =  await (await axios.get(dataLink)).data
         context.commit('setExperience', Experience)
       } 
       catch (e) {
@@ -86,7 +84,7 @@ export default createStore({
     },
     async fetchSkills(context){
       try {
-        let {Skills} =  await (await axios.get(portfolioDataURL)).data
+        let {Skills} =  await (await axios.get(dataLink)).data
         context.commit('setSkills', Skills)
       } 
       catch (e) {
@@ -100,7 +98,7 @@ export default createStore({
     },
     async fetchProjects(context){
       try {
-        let {Projects} =  await (await axios.get(portfolioDataURL)).data
+        let {Projects} =  await (await axios.get(dataLink)).data
         context.commit('setProjects', Projects)
       } 
       catch (e) {
@@ -114,7 +112,7 @@ export default createStore({
     },
     async fetchTestimonials(context){
       try {
-        let {Testimonials} =  await (await axios.get(portfolioDataURL)).data
+        let {Testimonials} =  await (await axios.get(dataLink)).data
         context.commit('setTestimonials', Testimonials)
       } 
       catch (e) {
@@ -128,7 +126,7 @@ export default createStore({
     },
     async fetchEducation(context){
       try {
-        let {Education} =  await (await axios.get(portfolioDataURL)).data
+        let {Education} =  await (await axios.get(dataLink)).data
         context.commit('setEducation', Education)
       } 
       catch (e) {
@@ -140,5 +138,7 @@ export default createStore({
         })
       }
     }
+  },
+  modules: {
   }
 })
