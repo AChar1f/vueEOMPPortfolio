@@ -23,7 +23,7 @@
 
 <script>
 export default {
-    
+    name: 'NavbarComp'
 }
 </script>
 
@@ -41,7 +41,7 @@ export default {
     font-weight: 500;
     &:hover{
         color: #2c3e50;
-    text-decoration: underline;} 
+        text-decoration: underline;} 
     
    }
 </style>
