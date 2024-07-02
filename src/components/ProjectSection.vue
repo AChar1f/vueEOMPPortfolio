@@ -38,8 +38,10 @@ onMounted(() => {
         background-color: black;
         color: whitesmoke;
         &:hover {
-            background-color: gray;
-            color: darkslategray;
+            background-color: black;
+            color: silver;
+            border: 1px solid white;
+            transform: scale(1.2);
         }
     }
 </style>

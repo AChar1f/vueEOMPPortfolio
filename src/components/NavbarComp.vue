@@ -9,7 +9,7 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav ms-auto px-3">
-        <a class="nav-link mx-3" aria-current="page" href="#">Home</a>
+        <a class="nav-link mx-3" href="#landing">Home</a>
         <a class="nav-link mx-3" href="#about">About</a>
         <a class="nav-link mx-3" href="#resume">Resume</a>
         <a class="nav-link mx-3" href="#projects">Projects</a>
@@ -32,7 +32,7 @@ export default {
 .navbar {
     background-color: black;
     font-family: "Roboto Serif", "Roboto", serif, sans-serif;
-    border-bottom: 4px #A29D95 solid;
+    border-bottom: 2px #A29D95 solid;
    
 }
    .nav-link{
@@ -40,7 +40,7 @@ export default {
     font-size: 25px;
     font-weight: 500;
     &:hover{
-        color: #2c3e50;
+        color: whitesmoke;
         text-decoration: underline;} 
     
    }
