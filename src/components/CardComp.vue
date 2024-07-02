@@ -18,8 +18,12 @@
   <style scoped>
   .card {
     width: 18rem;
-    padding-top: 9px;
-    background-color: darkslategray;
+    padding-block: 9px;
+    background-color: darkgray;
+    color: whitesmoke;
+  }
+  .card-body{
+    background-color:gray;
   }
 
   </style>
