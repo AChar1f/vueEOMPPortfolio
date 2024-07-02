@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <div class="row  text align-items-center">
+        <div class="row align-items-center">
             <h2 class="display-2">About</h2>
             <div v-if="about?.length" class="col">
                 <p>

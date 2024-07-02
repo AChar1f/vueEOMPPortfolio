@@ -49,11 +49,12 @@ img {
 img[alt='logo'] {
     width: 5rem;
 }
-
+/* landing image style */
 img[alt='profileImage'] {
   aspect-ratio: 1/1;
   width: 420px;
-  height: 420px;}
+  height: 420px;
+}
 
   @media (width < 992px) {
     img[alt='profileImage'] {
@@ -78,7 +79,7 @@ img[alt='profileImage'] {
       height: 240px;
     }
   }
-
+/* landing image animation */
   .profileImage {
     border: 3px solid silver;
     animation-name: welcome;
@@ -118,6 +119,7 @@ img[alt='profileImage'] {
     
      }     
     }
+    /* landing header animation */
     .title {
       color: whitesmoke;
     opacity: 1;
@@ -141,3 +143,47 @@ img[alt='profileImage'] {
         right: 10rem;
       }
    }
+
+   /* Form */
+input, 
+textarea {
+caret-color: rgb(90, 90, 90);
+background-color: lightgray;
+min-height: 2rem;
+min-width: 15rem;
+text-align: center;
+}
+
+#message {
+    height: 5rem;
+}
+.rmform {
+  display: flex;
+  /* justify-content: space-evenly; */
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.formbuttons {
+  & button {
+      height: 40px;
+      width: 70px;   
+      margin-inline: 20px;
+      border-radius: .5rem;
+      background-color: #A29D95;
+      color: white;
+      &:hover {
+          color: whitesmoke;
+          background-color: #232323;
+      }
+  }
+}
+#icons a{
+  color: grey;
+  &:hover{
+    color: whitesmoke;
+  }
+}
+i {
+  width: fit-content;
+}

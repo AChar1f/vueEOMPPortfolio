@@ -19,8 +19,11 @@
   .card {
     width: 18rem;
     padding-block: 9px;
-    background-color: darkgray;
+    background-color: #A29D95;
     color: whitesmoke;
+  }
+  .card-header{
+    border: 2px solid silver;
   }
   .card-body{
     background-color:gray;
