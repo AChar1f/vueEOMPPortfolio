@@ -16,7 +16,7 @@
       <Testimonials/>
     </section>
     <section class="row" id="reachMe">
-
+      <Form/>
     </section>
   </div>
 </template>
@@ -27,11 +27,12 @@ import About from '@/components/AboutSection.vue'
 import Testimonials from '@/components/TestimonialsSection.vue'
 import Projects from '@/components/ProjectSection.vue'
 import Resume from '@/components/Resume.vue'
+import Form from '@/components/ContactSection.vue'
 
 export default {
   name: 'HomeView',
   components: {
-    Landing, About, Testimonials, Projects, Resume
+    Landing, About, Testimonials, Projects, Resume, Form
   }
 }
 </script>
