@@ -13,6 +13,9 @@
                 </template>
             </Card>
         </div>
+        <div class="row align-content-center gap-5 mx-5">
+            <div v-for="(content, id) in skills" :key="id" class="rounded-pill pic my-3 bg-dark"><span><img class="img-fluid pi" :src="content.img_url" alt="content.skillName"></span></div>
+        </div>
     </div>
 </template>
 
@@ -27,6 +30,13 @@ const skills = computed( () => store.state.skills)
 onMounted( () => store.dispatch('fetchSkills'))
 </script>
 
-<style>
-    
+<style scoped> 
+.pic{
+    width:150px;
+    height: 150px;
+}
+.pi{
+    width: 100px;
+    height: 100px;
+}
 </style>

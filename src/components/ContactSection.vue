@@ -3,8 +3,8 @@
     <div class="row justify-content-center">
       <h2 class="display-2">Reach Me</h2>
     </div>
-    <div class="row gap-2">
-      <div class="col">
+    <div class="row justify-content-center gap-2">
+      <div class="col col-lg-5 mb-1">
         <form
           action="https://formspree.io/f/manwyeao"
           method="POST"
@@ -32,7 +32,7 @@
         </form>
       </div>
       <div
-        class="col d-flex flex-column justify-content-center gap-4 bg-dark"
+        class="col col-lg-5 d-flex flex-column justify-content-center gap-4 bg-dark mb-1"
         id="icons"
       >
         <span><i class="bi bi-envelope-at-fill"> acharif41@gmail.com</i></span>
@@ -52,4 +52,6 @@
 
 <script></script>
 
-<style scoped></style>
+<style scoped>
+
+</style>
