@@ -1,32 +1,58 @@
 <template>
-    <div class="container">
-        <div class="row">
-            <h4 class="display-4">Skills</h4>
-        </div>
-        <div class="row gap-3 justify-content-center mb-3">
-            <Card v-for="(content, id) in skills" :key="id">
-                <template #cardHeader>
-                    <img loading="lazy" class="img-fluid" :src="content.img_url" :alt="content.skillName">
-                </template>
-                <template #cardBody>
-                    <h5>{{ content.skillName }}</h5>
-                </template>
-            </Card>
-        </div>
+  <div class="container">
+    <div class="row">
+      <h4 class="display-4">Skills</h4>
     </div>
+    <div class="row gap-3 justify-content-center mb-3">
+      <Card v-for="(content, id) in skills" :key="id">
+        <template #cardHeader>
+          <img
+            loading="lazy"
+            class="img-fluid"
+            :src="content.img_url"
+            :alt="content.skillName"
+          />
+        </template>
+        <template #cardBody>
+          <h5>{{ content.skillName }}</h5>
+        </template>
+      </Card>
+    </div>
+    <div class="row align-content-center gap-5 mx-5">
+      <div
+        v-for="(content, id) in skills"
+        :key="id"
+        class="rounded-pill pic my-3 bg-dark"
+      >
+        <span class="d-flex justify-content-center"
+          ><img
+            class="img-fluid pi bg-light rounded-pill mt-4 justify-content-center"
+            :src="content.img_url"
+            alt="content.skillName"
+        /></span>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script setup>
-import Card from './CardComp.vue'
-import { computed, onMounted } from 'vue'
-import { useStore } from 'vuex'
+import Card from "./CardComp.vue";
+import { computed, onMounted } from "vue";
+import { useStore } from "vuex";
 
-const store = useStore()
-const skills = computed( () => store.state.skills)
+const store = useStore();
+const skills = computed(() => store.state.skills);
 
-onMounted( () => store.dispatch('fetchSkills'))
+onMounted(() => store.dispatch("fetchSkills"));
 </script>
 
-<style>
-    
+<style scoped>
+.pic {
+  width: 150px;
+  height: 150px;
+}
+.pi {
+  width: 100px;
+  height: 100px;
+}
 </style>

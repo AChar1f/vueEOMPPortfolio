@@ -3,8 +3,8 @@
     <div class="row justify-content-center">
       <h2 class="display-2">Reach Me</h2>
     </div>
-    <div class="row gap-2">
-      <div class="col">
+    <div class="row justify-content-center gap-2">
+      <div class="col col-lg-5 mb-1">
         <form
           action="https://formspree.io/f/manwyeao"
           method="POST"
@@ -32,19 +32,21 @@
         </form>
       </div>
       <div
-        class="col d-flex flex-column justify-content-center gap-4 bg-dark"
+        class="col col-lg-5 d-flex flex-column justify-content-center gap-4 bg-dark mb-1"
         id="icons"
       >
-        <span><i class="bi bi-envelope-at-fill"> acharif41@gmail.com</i></span>
-        <span><i class="bi bi-telephone-fill"> +27 76 983 2333</i></span>
+        <span><i class="bi bi-envelope-at-fill"> Email: acharif41@gmail.com</i></span>
+        <span><i class="bi bi-telephone-fill"> Cell no. : +27 76 983 2333</i></span>
         <span
-          ><a
-            href="https://github.com/AChar1f"
-            target="_blank"
-            class="text-decoration-none"
-            ><i class="bi bi-github"> AChar1f</i></a
-          ></span>
-        <span><i class="bi bi-geo"> Surrey Estate, Cape Town</i></span>
+          ><a href="https://github.com/AChar1f" target="_blank"
+            ><i class="bi bi-github"> Github: AChar1f</i></a
+          ></span
+        >
+        <span
+          ><a href="https://maps.app.goo.gl/P8axQPBDNRgRWXWh7" target="_blank"
+            ><i class="bi bi-geo"> Address: Surrey Estate, Cape Town</i></a
+          ></span
+        >
       </div>
     </div>
   </div>
@@ -52,4 +54,52 @@
 
 <script></script>
 
-<style scoped></style>
+<style scoped>
+/* Form */
+input,
+textarea {
+  caret-color: rgb(90, 90, 90);
+  background-color: lightgray;
+  min-height: 2rem;
+  min-width: 15rem;
+  text-align: center;
+}
+
+#message {
+  height: 5rem;
+}
+.rmform {
+  display: flex;
+  /* justify-content: space-evenly; */
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.formbuttons {
+  & button {
+    height: 40px;
+    width: 70px;
+    margin-inline: 20px;
+    border-radius: 0.5rem;
+    background-color: #a29d95;
+    color: white;
+    &:hover {
+      color: whitesmoke;
+      background-color: #232323;
+    }
+  }
+}
+
+#icons a {
+  color: whitesmoke;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+    opacity: 0.4;
+  }
+}
+i {
+  width: fit-content;
+  font-size: 20px;
+}
+</style>
