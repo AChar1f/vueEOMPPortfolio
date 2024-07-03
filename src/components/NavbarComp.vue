@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-expand-lg sticky-top">
+  <nav class="navbar navbar-expand-lg sticky-top navbar-dark">
     <div class="container-fluid">
       <router-link class="navbar-brand" to="/"
         ><img
@@ -43,10 +43,10 @@ export default {
 /* Navbar */
 .navbar {
   background-color: black;
-  border-bottom: 2px #a29d95 solid;
+  border-bottom: 2px silver solid;
 }
 .nav-link {
-  color: whitesmoke;
+  color: white;
   font-size: 20px;
   font-weight: 500;
   &:hover {

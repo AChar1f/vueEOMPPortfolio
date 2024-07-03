@@ -32,7 +32,5 @@ onMounted(() => {
 </script>
 
 <style scoped>
-.row{
-    height: 85.5vh;
-}
+
 </style>

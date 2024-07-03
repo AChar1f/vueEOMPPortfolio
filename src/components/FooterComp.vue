@@ -21,7 +21,7 @@ export default {
 <style scoped>
 .container-fluid {
   color: whitesmoke;
-  border-top: 2px solid #a29d95;
+  border-top: 2px solid silver;
   background-image: linear-gradient(180deg, black 50%, #232323);
 }
 </style>
