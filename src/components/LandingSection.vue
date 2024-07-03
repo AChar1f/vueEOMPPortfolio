@@ -3,14 +3,14 @@
     <div class="row landing align-items-center text-center">
       <div class="col">
         <img
-          src="https://achar1f.github.io/projectimages/images/me.png"
+          src="https://achar1f.github.io/projectimages/vueImages/P-abdu.jpeg"
           alt="profileImage"
           loading="lazy"
           class="profileImage"
         />
       </div>
       <div class="col">
-        <h2 class="display-4 title">Abdurahmaan Charif</h2>
+        <h2 class="title">Abdurahmaan Charif</h2>
         <h3 class="title">Aspiring Developer</h3>
       </div>
     </div>
@@ -23,23 +23,23 @@
 /* landing image style */
 img[alt="profileImage"] {
   aspect-ratio: 1/1;
-  width: 420px;
-  height: 420px;
+  width: 360px;
+  height: 360px;
 }
 
 @media (width < 992px) {
   img[alt="profileImage"] {
     aspect-ratio: 1;
-    width: 380px;
-    height: 380px;
+    width: 320px;
+    height: 320px;
   }
 }
 
 @media (width < 770px) {
   img[alt="profileImage"] {
     aspect-ratio: 1;
-    width: 360px;
-    height: 360px;
+    width: 300px;
+    height: 300px;
   }
 }
 
@@ -109,5 +109,17 @@ img[alt="profileImage"] {
     opacity: 1;
     right: 10rem;
   }
+}
+
+@media (width < 770px){
+  .profileImage{
+    animation: 0;
+  }
+  .title{
+    animation: none;
+  }
+}
+.row{
+  background-image: linear-gradient(180deg, black 65%,#232323);
 }
 </style>

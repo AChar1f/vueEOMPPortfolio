@@ -47,7 +47,7 @@ export default {
 }
 .nav-link {
   color: whitesmoke;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 500;
   &:hover {
     color: whitesmoke;

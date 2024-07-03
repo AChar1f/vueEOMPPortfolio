@@ -1,9 +1,6 @@
 <template>
   <div class="container">
     <div class="row">
-      <h2 class="display-2">Resume</h2>
-    </div>
-    <div class="row">
       <Skills />
     </div>
     <div class="col mt-5">

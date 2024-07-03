@@ -26,5 +26,6 @@ onMounted(() => store.dispatch("fetchEducation"));
 <style scoped>
 .Edu {
   border: 3px solid white;
+  background-image: linear-gradient(180deg, black 65%,#232323) ;
 }
 </style>
