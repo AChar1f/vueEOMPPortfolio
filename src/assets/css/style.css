@@ -39,11 +39,15 @@ section {
   width: 100dvw;
   padding:0;
 }
-
+/* landing container */
 .landing {
   min-height: 100vh;
 }
 
+/* about contianer */
+#about{
+  min-height: 85.5vh;
+}
 /* Select all images */
 img {
   aspect-ratio: 1;
