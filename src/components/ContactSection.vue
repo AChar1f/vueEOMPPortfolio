@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="row justify-content-center">
-      <h2 class="display-2">Reach Me</h2>
+      <h2 class="">Reach Me</h2>
     </div>
     <div class="row rmc justify-content-center gap-2">
       <div class="col col-lg-5 mb-1">
@@ -103,5 +103,11 @@ textarea {
 i {
   width: fit-content;
   font-size: 20px;
+}
+form{
+  background-image: linear-gradient(180deg, black 65%,#232323);
+}
+#icons{
+  background-image: linear-gradient(180deg, black 65%,#232323);
 }
 </style>

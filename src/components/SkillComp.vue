@@ -18,20 +18,6 @@
         </template>
       </Card>
     </div>
-    <div class="row align-content-center gap-5 mx-5">
-      <div
-        v-for="(content, id) in skills"
-        :key="id"
-        class="rounded-pill pic my-3 bg-dark"
-      >
-        <span class="d-flex justify-content-center"
-          ><img
-            class="img-fluid pi bg-light rounded-pill mt-4 justify-content-center"
-            :src="content.img_url"
-            alt="content.skillName"
-        /></span>
-      </div>
-    </div>
   </div>
 </template>
 

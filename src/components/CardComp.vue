@@ -19,14 +19,12 @@ export default {
 .card {
   width: 18rem;
   padding-block: 9px;
-  background-color: #a29d95;
-  color: whitesmoke;
+  background-image: linear-gradient(180deg, black 65%,#232323);
+  color: white;
 }
 .card-header {
   border: 2px solid silver;
   background-color: white;
 }
-.card-body {
-  background-color: gray;
-}
+
 </style>

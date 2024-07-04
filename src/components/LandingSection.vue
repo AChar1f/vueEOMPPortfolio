@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container-fluid">
     <div class="row landing align-items-center text-center">
       <div class="col">
         <img

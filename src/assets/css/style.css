@@ -37,10 +37,11 @@ section {
 /* responsiveness width */
 :is(main.container-fluid) {
   width: 100dvw;
+  padding:0;
 }
 
 .landing {
-  min-height: 85.5vh;
+  min-height: 100vh;
 }
 
 /* Select all images */
