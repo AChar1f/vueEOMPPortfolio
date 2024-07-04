@@ -1,5 +1,5 @@
 <template>
-  <div class="container-fluid py-3 XP">
+  <div class="container py-3 XP">
     <div class="row pb-3">
       <h2>Experience</h2>
     </div>
