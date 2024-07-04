@@ -33,7 +33,7 @@ onMounted(() => {
 
 <style scoped>
 .container{
-  background:url("https://achar1f.github.io/projectimages/images/about-bg.jpg") no-repeat center;
+  background:url("https://achar1f.github.io/projectimages/images/about-bg.jpg") no-repeat center 30%;
 }
 .row{
   backdrop-filter: brightness(40%);
