@@ -1,40 +1,40 @@
 <template>
   <div class="container">
     <div class="row justify-content-center">
-      <h2 class="">Reach Me</h2>
+      <h2 class="display-2">Reach Me</h2>
     </div>
     <div class="row rmc justify-content-center gap-2">
-      <div class="col col-lg-5 mb-1">
+      <div class="row">
         <form
           action="https://formspree.io/f/manwyeao"
           method="POST"
-          class="rmform"
+          class="rmform form-control"
         >
-          <h5>Get in Touch</h5>
           <label>Name:</label>
-          <input class="name" placeholder="Full Name" type="text" required />
+          <input class="name form-control" placeholder="Full Name" type="text" required />
           <label>Email:</label>
           <input
-            class="email"
+            class="email form-control"
             placeholder="Email Address"
             type="email"
             required
           /><label>Your Message:</label>
           <textarea
             name="message"
+            class="form-control"
             id="message"
             placeholder="Let's have a conversation."
             required
           ></textarea>
 
-          <div class="formbuttons m-3">
+          <div class="row gap-2 formbuttons justify-content-center">
             <button type="submit">Submit</button>
             <button type="reset">Clear</button>
           </div>
         </form>
       </div>
       <div
-        class="col col-lg-5 d-flex flex-column justify-content-center gap-4 mb-1"
+        class="row mt-2 mb-1"
         id="icons"
       >
         <span><i class="bi bi-envelope-at-fill"> Email: acharif41@gmail.com</i></span>
@@ -60,15 +60,14 @@
 /* Form */
 input,
 textarea {
-  caret-color: rgb(90, 90, 90);
-  background-color: lightgray;
+  caret-color: silver;
   min-height: 2rem;
-  min-width: 15rem;
+  max-width: 70vw;
   text-align: center;
 }
 
 #message {
-  height: 5rem;
+  height: 6rem;
 }
 .rmform {
   display: flex;
@@ -76,18 +75,21 @@ textarea {
   flex-direction: column;
   align-items: center;
   gap: 1rem;
+  color:white
 }
 .formbuttons {
+  width: 100%;
   & button {
-    height: 40px;
-    width: 70px;
-    margin-inline: 20px;
+  padding-inline: 6px;
+    height: 3rem;
+    max-width: 70vw;
+    margin-inline: 0;
     border-radius: 0.5rem;
     background-color: #a29d95;
     color: white;
     &:hover {
-      color: whitesmoke;
-      background-color: #232323;
+      color: white;
+      background-color: silver;
     }
   }
 }
@@ -97,7 +99,7 @@ textarea {
   text-decoration: none;
   &:hover {
     text-decoration: underline;
-    opacity: 0.4;
+    color:silver;
   }
 }
 i {
@@ -110,4 +112,5 @@ form{
 #icons{
   background-image: linear-gradient(180deg, black 65%,#232323);
 }
+
 </style>
