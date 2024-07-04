@@ -1,9 +1,9 @@
 <template>
   <div class="container">
-    <div class="row pt-5">
-      <h2 class="display-2">Projects</h2>
+    <div class="row">
+      <h2>Projects</h2>
     </div>
-    <div class="row gap-3 mb-3 justify-content-center">
+    <div class="row gap-3 mb-3 justify-content-center" v-if="projects?.length">
       <Card v-for="(content, id) in projects" :key="id">
         <template #cardHeader>
           <img
@@ -27,6 +27,7 @@
         </template>
       </Card>
     </div>
+    <Spinner v-else/>
   </div>
 </template>
 
@@ -34,6 +35,7 @@
 import Card from "./CardComp.vue";
 import { computed, onMounted } from "vue";
 import { useStore } from "vuex";
+import Spinner from './SpinnerComp.vue'
 
 const store = useStore();
 const projects = computed(() => store.state.projects);
@@ -45,9 +47,9 @@ onMounted(() => {
 
 <style scoped>
 .btn {
-  margin-inline: 0.5rem;
+  margin-inline: 2.2rem;
   background-color: black;
-  color: whitesmoke;
+  color: white;
   &:hover {
     background-color: black;
     color: silver;

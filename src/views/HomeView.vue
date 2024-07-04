@@ -3,19 +3,19 @@
     <section class="row" id="landing">
       <Landing/>
     </section>
-    <section class="row" id="about">
+    <section class="row mt-5" id="about">
       <About/>
     </section>
-    <section class="row" id="resume">
+    <section class="row mt-5" id="resume">
       <Resume/>
     </section>
-    <section class="row" id="projects">
+    <section class="row mt-5" id="projects">
       <Projects/>
     </section>
-    <section class="row" id="testimonials">
+    <section class="row mt-5" id="testimonials">
       <Testimonials/>
     </section>
-    <section class="row" id="reachMe">
+    <section class="row mt-5" id="reachMe">
       <Form/>
     </section>
   </div>

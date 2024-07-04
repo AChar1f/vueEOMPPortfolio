@@ -20,7 +20,7 @@ export default {
 </script>
 <style scoped>
 .container-fluid {
-  color: whitesmoke;
+  color: white;
   border-top: 2px solid silver;
   background-image: linear-gradient(180deg, black 50%, #232323);
 }

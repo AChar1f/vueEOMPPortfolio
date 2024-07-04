@@ -1,10 +1,10 @@
 <template>
   <div class="container-fluid">
     <div class="row">
-      <h2 class="display-2">Testimonials</h2>
+      <h2>Testimonials</h2>
     </div>
-    <div class="row justify-content-center gap-3 mb-3">
-      <Card v-for="(content, id) in testimonials" :key="id">
+    <div class="row justify-content-center gap-3 mb-3" data-aos="fade-left" v-if="testimonials?.length">
+      <Card v-for="(content, id) in testimonials" :key="id" >
         <template #cardHeader>
           <img
             class="img-fluid"
@@ -20,6 +20,7 @@
         </template>
       </Card>
     </div>
+    <Spinner v-else/>
   </div>
 </template>
 
@@ -27,11 +28,18 @@
 import { computed, onMounted } from "vue";
 import { useStore } from "vuex";
 import Card from "./CardComp.vue";
+import Spinner from "./SpinnerComp.vue";
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 const store = useStore();
 const testimonials = computed(() => store.state.testimonials);
 
-onMounted(() => store.dispatch("fetchTestimonials"));
+onMounted(() => {
+  AOS.init({duration: 2000, once: false})}
+,store.dispatch("fetchTestimonials"));
 </script>
 
-<style scoped></style>
+<style scoped>
+
+</style>

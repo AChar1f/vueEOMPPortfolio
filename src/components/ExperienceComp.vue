@@ -1,22 +1,24 @@
 <template>
-  <div class="container XP">
-    <div class="row">
-      <h4 class="display-4">Experience</h4>
+  <div class="container-fluid py-3 XP">
+    <div class="row pb-3">
+      <h2>Experience</h2>
     </div>
-    <div class="row">
+    <div class="row" v-if="Experience?.length">
       <div class="col" v-for="(content, id) in Experience" :key="id">
-        <h4>{{ content.role }}</h4>
-        <h4>{{ content.location }}</h4>
-        <h5>{{ content.duration }}</h5>
+        <h5>{{ content.role }}</h5>
+        <h5>{{ content.location }}</h5>
+        <h6>{{ content.duration }}</h6>
         <p>{{ content.description }}</p>
       </div>
     </div>
+    <Spinner v-else/>
   </div>
 </template>
 
 <script setup>
 import { computed, onMounted } from "vue";
 import { useStore } from "vuex";
+import Spinner from './SpinnerComp.vue'
 
 const store = useStore();
 const Experience = computed(() => store.state.experience);

@@ -7,5 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap'
 import 'sweetalert2'
 import 'aos/dist/aos.css'
+import AOS from 'aos'
 
 createApp(App).use(store).use(router).mount('#app')
+AOS.init()

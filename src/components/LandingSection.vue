@@ -88,7 +88,7 @@ img[alt="profileImage"] {
 }
 /* landing header animation */
 .title {
-  color: whitesmoke;
+  color: white;
   opacity: 1;
   animation-name: rightFadeInOut;
   animation-delay: 0s;
