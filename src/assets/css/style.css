@@ -28,7 +28,7 @@ nav {
   display: grid;
   grid-template-rows: auto minmax(100dvh, 100%) auto;
   background-color: black;
-  color: whitesmoke;
+  color: white;
 }
 /* section */
 section {
@@ -46,7 +46,7 @@ section {
 
 /* about contianer */
 #about{
-  min-height: 85.5vh;
+  min-height: 80vh;
 }
 /* Select all images */
 img {

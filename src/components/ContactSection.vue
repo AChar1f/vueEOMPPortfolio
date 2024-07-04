@@ -1,7 +1,7 @@
 <template>
-  <div class="container">
+  <div class="container pt-5">
     <div class="row justify-content-center">
-      <h2 class="display-2">Reach Me</h2>
+      <h2 class="">Reach Me</h2>
     </div>
     <div class="row rmc justify-content-center gap-2">
       <div class="row">
@@ -34,7 +34,7 @@
         </form>
       </div>
       <div
-        class="row mt-2 mb-1"
+        class="row gap-3 mt-2 mb-2"
         id="icons"
       >
         <span><i class="bi bi-envelope-at-fill"> Email: acharif41@gmail.com</i></span>
@@ -49,6 +49,7 @@
             ><i class="bi bi-geo"> Located: Surrey Estate, Cape Town</i></a
           ></span
         >
+        <span><a href="https://www.linkedin.com/in/abdurahmaan-charif-57675b228/" target="_blank"><i class="bi bi-linkedin"> LinkedIn: Abdurahmaan Charif</i></a></span>
       </div>
     </div>
   </div>
@@ -61,8 +62,9 @@
 input,
 textarea {
   caret-color: silver;
-  min-height: 2rem;
-  max-width: 70vw;
+  min-height: 3rem;
+  max-width: 50vw;
+  min-width: 15rem;
   text-align: center;
 }
 
@@ -82,7 +84,7 @@ textarea {
   & button {
   padding-inline: 6px;
     height: 3rem;
-    max-width: 70vw;
+    max-width: 50vw;
     margin-inline: 0;
     border-radius: 0.5rem;
     background-color: #a29d95;
@@ -95,7 +97,7 @@ textarea {
 }
 
 #icons a {
-  color: whitesmoke;
+  color: white;
   text-decoration: none;
   &:hover {
     text-decoration: underline;

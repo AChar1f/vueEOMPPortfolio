@@ -1,6 +1,6 @@
 <template>
   <div class="d-flex justify-content-center">
-    <div class="wrapper">
+    <div class="loader">
       <div class="circle"></div>
       <div class="circle"></div>
       <div class="circle"></div>
@@ -18,7 +18,7 @@ export default {
 </script>
 
 <style scoped>
-.wrapper {
+.loader {
   width: 200px;
   height: 60px;
   position: relative;
@@ -30,7 +30,7 @@ export default {
   height: 20px;
   position: absolute;
   border-radius: 50%;
-  background-color: darkslategray;
+  background-color: silver;
   left: 15%;
   transform-origin: 50%;
   animation: circle7124 0.5s alternate infinite ease;
@@ -70,7 +70,7 @@ export default {
   width: 20px;
   height: 4px;
   border-radius: 50%;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(255, 255, 255, 0.9);
   position: absolute;
   top: 62px;
   transform-origin: 50%;

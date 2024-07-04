@@ -1,9 +1,9 @@
 <template>
   <div class="container">
     <div class="row">
-      <h4 class="display-4">Skills</h4>
+      <h2>Skills</h2>
     </div>
-    <div class="row gap-3 justify-content-center mb-3">
+    <div class="row gap-3 justify-content-center mb-3" data-aos="fade-right" v-if="skills?.length">
       <Card v-for="(content, id) in skills" :key="id">
         <template #cardHeader>
           <img
@@ -18,6 +18,7 @@
         </template>
       </Card>
     </div>
+    <Spinner v-else/>
   </div>
 </template>
 
@@ -25,11 +26,17 @@
 import Card from "./CardComp.vue";
 import { computed, onMounted } from "vue";
 import { useStore } from "vuex";
+import Spinner from './SpinnerComp.vue'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 const store = useStore();
 const skills = computed(() => store.state.skills);
 
-onMounted(() => store.dispatch("fetchSkills"));
+onMounted(() => {
+  AOS.init({duration: 2000, once: false})
+}
+,store.dispatch("fetchSkills"));
 </script>
 
 <style scoped>
