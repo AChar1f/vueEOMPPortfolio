@@ -3,7 +3,7 @@
     <div class="row">
       <h2>Skills</h2>
     </div>
-    <div class="row gap-3 justify-content-center mb-3" data-aos="fade-right" v-if="skills?.length">
+    <div class="row gap-3 justify-content-center mb-3" v-if="skills?.length">
       <Card v-for="(content, id) in skills" :key="id">
         <template #cardHeader>
           <img
@@ -27,16 +27,10 @@ import Card from "./CardComp.vue";
 import { computed, onMounted } from "vue";
 import { useStore } from "vuex";
 import Spinner from './SpinnerComp.vue'
-import AOS from 'aos'
-import 'aos/dist/aos.css'
-
 const store = useStore();
 const skills = computed(() => store.state.skills);
 
-onMounted(() => {
-  AOS.init({duration: 2000, once: false})
-}
-,store.dispatch("fetchSkills"));
+onMounted(() => store.dispatch("fetchSkills"));
 </script>
 
 <style scoped>
