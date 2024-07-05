@@ -3,13 +3,14 @@
     <div class="row align-items-center">
       <h2>About</h2>
       <div v-if="about?.length" class="col pt-5">
+        <h5>Background:</h5>
+        <p>{{ about[0]?.part4 }}</p>
+        <h5>My Mission:</h5>
+        <p>{{ about[0]?.part5 }}</p>
+        <h5>My Journey:</h5>
         <p>
           {{ about[0]?.part1 }}
-        </p>
-        <p>
           {{ about[0]?.part2 }}
-        </p>
-        <p>
           {{ about[0]?.part3 }}
         </p>
       </div>
@@ -33,7 +34,8 @@ onMounted(() => {
 
 <style scoped>
 .container{
-  background:url("https://achar1f.github.io/projectimages/images/about-bg.jpg") no-repeat center 30%;
+  background:url("https://achar1f.github.io/projectimages/images/about-bg.jpg") no-repeat 30%;
+  background-size: cover;
 }
 .row{
   backdrop-filter: brightness(40%);
