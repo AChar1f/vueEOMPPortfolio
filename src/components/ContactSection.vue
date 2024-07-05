@@ -11,7 +11,12 @@
           class="rmform form-control"
         >
           <label>Name:</label>
-          <input class="name form-control" placeholder="Full Name" type="text" required />
+          <input
+            class="name form-control"
+            placeholder="Full Name"
+            type="text"
+            required
+          />
           <label>Email:</label>
           <input
             class="email form-control"
@@ -33,12 +38,15 @@
           </div>
         </form>
       </div>
-      <div
-        class="row gap-3 mt-2 mb-2"
-        id="icons"
-      >
-        <span><i class="bi bi-envelope-at-fill"> Email: acharif41@gmail.com</i></span>
-        <span><i class="bi bi-telephone-fill"> Cell no. : +27 76 983 2333</i></span>
+      <div class="row gap-3 mt-2 mb-2" id="icons">
+        <span
+          ><i class="bi bi-envelope-at-fill">
+            Email: acharif41@gmail.com</i
+          ></span
+        >
+        <span
+          ><i class="bi bi-telephone-fill"> Cell no. : +27 76 983 2333</i></span
+        >
         <span
           ><a href="https://github.com/AChar1f" target="_blank"
             ><i class="bi bi-github"> Github: AChar1f</i></a
@@ -49,7 +57,13 @@
             ><i class="bi bi-geo"> Located: Surrey Estate, Cape Town</i></a
           ></span
         >
-        <span><a href="https://www.linkedin.com/in/abdurahmaan-charif-57675b228/" target="_blank"><i class="bi bi-linkedin"> LinkedIn: Abdurahmaan Charif</i></a></span>
+        <span
+          ><a
+            href="https://www.linkedin.com/in/abdurahmaan-charif-57675b228/"
+            target="_blank"
+            ><i class="bi bi-linkedin"> LinkedIn: Abdurahmaan Charif</i></a
+          ></span
+        >
       </div>
     </div>
   </div>
@@ -77,12 +91,12 @@ textarea {
   flex-direction: column;
   align-items: center;
   gap: 1rem;
-  color:white
+  color: white;
 }
 .formbuttons {
   width: 100%;
   & button {
-  padding-inline: 6px;
+    padding-inline: 6px;
     height: 3rem;
     max-width: 50vw;
     margin-inline: 0;
@@ -101,18 +115,17 @@ textarea {
   text-decoration: none;
   &:hover {
     text-decoration: underline;
-    color:silver;
+    color: silver;
   }
 }
 i {
   width: fit-content;
   font-size: 20px;
 }
-form{
-  background-image: linear-gradient(180deg, black 65%,#232323);
+form {
+  background-image: linear-gradient(180deg, black 65%, #232323);
 }
-#icons{
-  background-image: linear-gradient(180deg, black 65%,#232323);
+#icons {
+  background-image: linear-gradient(180deg, black 65%, #232323);
 }
-
 </style>

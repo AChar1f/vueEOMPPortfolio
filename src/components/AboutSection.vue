@@ -33,11 +33,12 @@ onMounted(() => {
 </script>
 
 <style scoped>
-.container{
-  background:url("https://achar1f.github.io/projectimages/images/about-bg.jpg") no-repeat 30%;
+.container {
+  background: url("https://achar1f.github.io/projectimages/images/about-bg.jpg")
+    no-repeat 30%;
   background-size: cover;
 }
-.row{
+.row {
   backdrop-filter: brightness(40%);
 }
 </style>

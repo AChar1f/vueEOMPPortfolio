@@ -18,7 +18,7 @@
         </template>
       </Card>
     </div>
-    <Spinner v-else/>
+    <Spinner v-else />
   </div>
 </template>
 
@@ -26,20 +26,11 @@
 import Card from "./CardComp.vue";
 import { computed, onMounted } from "vue";
 import { useStore } from "vuex";
-import Spinner from './SpinnerComp.vue'
+import Spinner from "./SpinnerComp.vue";
 const store = useStore();
 const skills = computed(() => store.state.skills);
 
 onMounted(() => store.dispatch("fetchSkills"));
 </script>
 
-<style scoped>
-.pic {
-  width: 150px;
-  height: 150px;
-}
-.pi {
-  width: 100px;
-  height: 100px;
-}
-</style>
+<style scoped></style>

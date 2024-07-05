@@ -11,14 +11,14 @@
         <h6>{{ content.qualification }}</h6>
       </div>
     </div>
-    <Spinner v-else/>
+    <Spinner v-else />
   </div>
 </template>
 
 <script setup>
 import { computed, onMounted } from "vue";
 import { useStore } from "vuex";
-import Spinner from './SpinnerComp.vue'
+import Spinner from "./SpinnerComp.vue";
 
 const store = useStore();
 const Education = computed(() => store.state.education);
@@ -28,6 +28,6 @@ onMounted(() => store.dispatch("fetchEducation"));
 <style scoped>
 .Edu {
   border: 3px solid white;
-  background-image: linear-gradient(180deg, black 65%,#232323) ;
+  background-image: linear-gradient(180deg, black 65%, #232323);
 }
 </style>
