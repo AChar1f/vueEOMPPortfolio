@@ -27,7 +27,7 @@
         </template>
       </Card>
     </div>
-    <Spinner v-else/>
+    <Spinner v-else />
   </div>
 </template>
 
@@ -35,7 +35,7 @@
 import Card from "./CardComp.vue";
 import { computed, onMounted } from "vue";
 import { useStore } from "vuex";
-import Spinner from './SpinnerComp.vue'
+import Spinner from "./SpinnerComp.vue";
 
 const store = useStore();
 const projects = computed(() => store.state.projects);

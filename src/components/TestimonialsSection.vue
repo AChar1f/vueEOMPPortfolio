@@ -3,8 +3,11 @@
     <div class="row">
       <h2>Testimonials</h2>
     </div>
-    <div class="row justify-content-center gap-3 mb-3" v-if="testimonials?.length">
-      <Card v-for="(content, id) in testimonials" :key="id" >
+    <div
+      class="row justify-content-center gap-3 mb-3"
+      v-if="testimonials?.length"
+    >
+      <Card v-for="(content, id) in testimonials" :key="id">
         <template #cardHeader>
           <img
             class="img-fluid"
@@ -20,7 +23,7 @@
         </template>
       </Card>
     </div>
-    <Spinner v-else/>
+    <Spinner v-else />
   </div>
 </template>
 
@@ -36,6 +39,4 @@ const testimonials = computed(() => store.state.testimonials);
 onMounted(() => store.dispatch("fetchTestimonials"));
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>
