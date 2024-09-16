@@ -23,9 +23,8 @@
         <div class="navbar-nav ms-auto px-3">
           <a class="nav-link mx-3" href="#landing">Home</a>
           <a class="nav-link mx-3" href="#about">About</a>
-          <a class="nav-link mx-3" href="#resume">Resume</a>
+          <a class="nav-link mx-3" href="#resume">Education & Experience</a>
           <a class="nav-link mx-3" href="#projects">Projects</a>
-          <a class="nav-link mx-3" href="#testimonials">Testimonials</a>
           <a class="nav-link mx-3" href="#reachMe">Reach Me</a>
         </div>
       </div>

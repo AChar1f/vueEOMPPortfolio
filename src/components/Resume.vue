@@ -1,13 +1,13 @@
 <template>
   <div class="container">
-    <div class="row">
-      <Skills />
-    </div>
-    <div class="col mt-5">
+    <div class="col mt-3">
       <Education />
     </div>
-    <div class="col mt-5">
+    <div class="col mt-3">
       <Experience />
+    </div>
+    <div class="row mt-3">
+      <Skills />
     </div>
   </div>
 </template>
