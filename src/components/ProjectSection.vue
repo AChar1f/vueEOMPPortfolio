@@ -1,9 +1,7 @@
 <template>
-  <div class="container">
-    <div class="row">
-      <h2>Projects</h2>
-    </div>
+  <div class="container d-flex col-xl-8">
     <div class="row gap-3 mb-3 justify-content-center" v-if="projects?.length">
+      <h2>Projects</h2>
       <Card v-for="(content, id) in projects" :key="id">
         <template #cardHeader>
           <img
