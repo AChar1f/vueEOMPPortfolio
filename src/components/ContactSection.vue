@@ -1,9 +1,9 @@
 <template>
   <div class="container">
     <div class="row justify-content-center">
-      <h2 class="pb-3">Reach Me</h2>
+      <h2 class="">Reach Me</h2>
     </div>
-    <div class="row rmc justify-content-center gap-2 pb-3">
+    <div class="row rmc justify-content-center gap-2">
       <div class="col-md-6 col-sm-12 mb-2 d-flex justify-content-center">
         <form
           action="https://formspree.io/f/manwyeao"
@@ -129,6 +129,7 @@ form {
 
 .rmc{
   background-image: linear-gradient(180deg, black 65%, #232323);
+  padding-block: 2.5rem;
 
 }
 </style>

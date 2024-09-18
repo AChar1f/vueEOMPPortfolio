@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-expand-lg sticky-top navbar-dark">
+  <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
     <div class="container-fluid">
       <router-link class="navbar-brand" to="/"
         ><img
@@ -49,7 +49,7 @@ export default {
   font-size: 20px;
   font-weight: 500;
   &:hover {
-    color: whitesmoke;
+    color: #d2a907;
     text-decoration: underline;
   }
 }
