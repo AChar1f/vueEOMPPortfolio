@@ -4,7 +4,7 @@
       <h2>Experience</h2>
     </div>
     <div class="row" v-if="Experience?.length">
-      <div class="col" v-for="(content, id) in Experience" :key="id">
+      <div class="col-md-4 col-sm-12" v-for="(content, id) in Experience" :key="id">
         <h5>{{ content.role }}</h5>
         <h5>{{ content.location }}</h5>
         <h6>{{ content.duration }}</h6>

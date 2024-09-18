@@ -1,10 +1,10 @@
 <template>
-  <div class="container pt-5">
+  <div class="container">
     <div class="row justify-content-center">
-      <h2 class="">Reach Me</h2>
+      <h2 class="pb-3">Reach Me</h2>
     </div>
-    <div class="row rmc justify-content-center gap-2">
-      <div class="row">
+    <div class="row rmc justify-content-center gap-2 pb-3">
+      <div class="col-md-6 col-sm-12 mb-2 d-flex justify-content-center">
         <form
           action="https://formspree.io/f/manwyeao"
           method="POST"
@@ -38,30 +38,30 @@
           </div>
         </form>
       </div>
-      <div class="row gap-3 mt-2 mb-2" id="icons">
+      <div class="d-flex flex-column justify-content-center col-md-4 col-sm-12 gap-3 mt-2 mb-2" id="icons">
+        <span
+          ><i class="bi bi-telephone-fill"> Cell no. : +27 76 983 2333</i></span
+        >
         <span
           ><i class="bi bi-envelope-at-fill">
             Email: acharif41@gmail.com</i
           ></span
         >
         <span
-          ><i class="bi bi-telephone-fill"> Cell no. : +27 76 983 2333</i></span
-        >
-        <span
           ><a href="https://github.com/AChar1f" target="_blank"
             ><i class="bi bi-github"> Github: AChar1f</i></a
           ></span
-        >
-        <span
-          ><a href="https://maps.app.goo.gl/P8axQPBDNRgRWXWh7" target="_blank"
-            ><i class="bi bi-geo"> Located: Surrey Estate, Cape Town</i></a
-          ></span
-        >
+        >        
         <span
           ><a
             href="https://www.linkedin.com/in/abdurahmaan-charif-57675b228/"
             target="_blank"
             ><i class="bi bi-linkedin"> LinkedIn: Abdurahmaan Charif</i></a
+          ></span
+        >
+        <span
+          ><a href="https://maps.app.goo.gl/P8axQPBDNRgRWXWh7" target="_blank"
+            ><i class="bi bi-geo"> Located: Surrey Estate, Cape Town</i></a
           ></span
         >
       </div>
@@ -92,6 +92,7 @@ textarea {
   align-items: center;
   gap: 1rem;
   color: white;
+  max-width: 600px;
 }
 .formbuttons {
   width: 100%;
@@ -115,7 +116,7 @@ textarea {
   text-decoration: none;
   &:hover {
     text-decoration: underline;
-    color: silver;
+    color: #d2a907;
   }
 }
 i {
@@ -125,7 +126,9 @@ i {
 form {
   background-image: linear-gradient(180deg, black 65%, #232323);
 }
-#icons {
+
+.rmc{
   background-image: linear-gradient(180deg, black 65%, #232323);
+
 }
 </style>
