@@ -1,13 +1,13 @@
 <template>
   <div class="container">
-    <div class="row align-items-center">
+    <div class="row align-items-center mx-2">
       <h2>About</h2>
       <div v-if="about?.length" class="col pt-5">
-        <h5>Background:</h5>
+        <h5>Background</h5>
         <p>{{ about[0]?.part4 }}</p>
-        <h5>My Mission:</h5>
+        <h5>My Mission</h5>
         <p>{{ about[0]?.part5 }}</p>
-        <h5>My Journey:</h5>
+        <h5>My Journey</h5>
         <p>
           {{ about[0]?.part1 }}
           {{ about[0]?.part2 }}
