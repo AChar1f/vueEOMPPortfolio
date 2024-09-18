@@ -50,8 +50,8 @@ onMounted(() => {
   color: white;
   &:hover {
     background-color: black;
-    color: silver;
-    border: 1px solid white;
+    color: #d2a907;
+    border: 1px solid #d2a907;
     transform: scale(1.2);
   }
 }
