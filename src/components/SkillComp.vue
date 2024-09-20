@@ -1,7 +1,8 @@
 <template>
-  <div class="container d-flex justify-content-center col-8">
+  <div class="container d-flex justify-content-center col-8 col-xxl-8">
     <div class="row gap-3 justify-content-center mb-3" v-if="skills?.length">
       <h2>Skills</h2>
+      <h4>Soft and Technical</h4>
       <Card v-for="(content, id) in skills" :key="id">
         <template #cardHeader>
           <img

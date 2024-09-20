@@ -3,8 +3,11 @@
     <section class="row" id="landing">
       <Landing/>
     </section>
-    <section class="row mt-5" id="about">
+    <section class="row mt-5 d-flex justify-content-center" id="about">
       <About/>
+      <div class="row mt-3">
+      <Skills />
+    </div>
     </section>
     <section class="row mt-5" id="resume">
       <Resume/>
@@ -21,6 +24,7 @@
 <script>
 import Landing from '@/components/LandingSection.vue'
 import About from '@/components/AboutSection.vue'
+import Skills from '@/components/SkillComp.vue'
 import Projects from '@/components/ProjectSection.vue'
 import Resume from '@/components/Resume.vue'
 import Form from '@/components/ContactSection.vue'
@@ -28,7 +32,7 @@ import Form from '@/components/ContactSection.vue'
 export default {
   name: 'HomeView',
   components: {
-    Landing, About, Projects, Resume, Form
+    Landing, About, Skills, Projects, Resume, Form
   }
 }
 </script>
