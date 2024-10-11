@@ -13,6 +13,8 @@ export default createStore({
     skills: null,
     projects: null,
     testimonials: null,
+    badges: null,
+    certificates: null
   },
   getters: {
   },
@@ -37,6 +39,12 @@ export default createStore({
     },
     setTestimonials(state, value) {
       state.testimonials = value
+    },
+    setBadges(state, value) {
+      state.badges = value
+    },
+    setCertificates(state, value) {
+      state.certificates = value
     }
   },
   actions: {
@@ -133,6 +141,32 @@ export default createStore({
         Swal.fire ({
           title: "Error",
           text: "Failed to fetch education data",
+          icon: "error",
+          timer: 2000
+        })
+      }
+    },
+    async fetchBadges(context) {
+      try {
+        let {Badges} = await (await axios.get(dataLink)).data
+        context.commit('setBadges', Badges)
+      } catch (e) {
+        Swal.fire ({
+          title: "Error",
+          text: "Failed to fetch Badge data",
+          icon: "error",
+          timer: 2000
+        })
+      }
+    },
+    async fetchCertificates(context) {
+      try {
+        let {Certificates} = await (await axios.get(dataLink)).data
+        context.commit('setCertificates', Certificates)
+      } catch (e) {
+        Swal.fire ({
+          title: "Error",
+          text: "Failed to fetch Certificate data",
           icon: "error",
           timer: 2000
         })
