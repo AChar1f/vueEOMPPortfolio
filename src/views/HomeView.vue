@@ -7,6 +7,7 @@
       <About/>
       <div class="row mt-3">
       <Skills />
+      <Awards />
     </div>
     </section>
     <section class="row mt-5" id="resume">
@@ -28,11 +29,12 @@ import Skills from '@/components/SkillComp.vue'
 import Projects from '@/components/ProjectSection.vue'
 import Resume from '@/components/Resume.vue'
 import Form from '@/components/ContactSection.vue'
+import Awards from '@/components/AchievementsSection.vue'
 
 export default {
   name: 'HomeView',
   components: {
-    Landing, About, Skills, Projects, Resume, Form
+    Landing, About, Skills, Projects, Resume, Form, Awards
   }
 }
 </script>
