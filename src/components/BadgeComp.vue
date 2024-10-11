@@ -3,7 +3,7 @@
     <div v-if="badges?.length" class="row justify-content-center gap-3">
     <Card v-for="(content, id) in badges" :key="id" class="nospace">
         <template #cardHeader>
-            <img :src="content.img" :alt="content.course">
+            <img :src="content.img" :alt="content.course" loading="lazy">
         </template>
         <template #cardBody>
             <h6>{{ content.course }}</h6>
