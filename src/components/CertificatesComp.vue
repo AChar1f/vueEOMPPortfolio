@@ -3,7 +3,7 @@
         <div class="row justify-content-center gap-3" v-if="certificates?.length">
             <Card v-for="(content, id) in certificates" :key="id">
                 <template #cardHeader>
-                    <img :src="content.img" :alt="content.course">
+                    <img :src="content.img" :alt="content.course" loading="lazy">
                 </template>
                 <template #cardBody>
                     <h6>{{ content.course }}</h6>
