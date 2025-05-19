@@ -1,5 +1,5 @@
 <template>
-    <div class="container col-6 col-xxl-6">
+    <div class="container d-flex justify-content-center col-8 col-xxl-8">
         <div class="row justify-content-center gap-3" v-if="certificates?.length">
             <Card v-for="(content, id) in certificates" :key="id">
                 <template #cardHeader>
@@ -33,7 +33,7 @@ onMounted (() => {
 <style scoped>
 
 img{
-    width: 8rem;
+    width: 10rem;
 }
 
 .btn {

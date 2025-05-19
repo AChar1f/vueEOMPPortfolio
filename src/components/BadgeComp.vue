@@ -1,5 +1,5 @@
 <template>
-    <div class="container col-8 col-xxl-8">
+    <div class="container d-flex justify-content-center col-8 col-xxl-8">
     <div v-if="badges?.length" class="row justify-content-center gap-3">
     <Card v-for="(content, id) in badges" :key="id" class="nospace">
         <template #cardHeader>
